@@ -1,0 +1,21 @@
+[project]
+name = "svoya-planirovka-mlsd"
+version = "0.1.0"
+description = "ML System Design: Своя планировка"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.0",
+    "ruff==0.17.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
